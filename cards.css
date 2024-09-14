@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        #card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 30px 10px;
+            border: 2px rgb(234, 224, 224) solid;
+            gap: 15px;
+
+            img {
+                height: 270px;
+                width: 270px;
+            }
+
+            #name {
+                font-size: 20px;
+                color: grey;
+            }
+
+            #price {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: end;
+                gap: 5px;
+
+                #price_1 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                #price_2 {
+                    font-size: 15px;
+                }
+            }
+
+            #delivery {
+                background-color: azure;
+                font-size: 15px;
+                border: radius 18px;
+                padding: 5px 5px;
+            }
+
+            #Ratings {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: end;
+                gap: 5px;
+
+                #stars {
+                    background-color: green;
+                    padding: 2px 15px;
+                    border-radius: 13px;
+                    color: aliceblue
+                }
+
+                #review {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}
